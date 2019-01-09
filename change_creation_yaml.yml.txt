@@ -1,0 +1,31 @@
+---
+- gather_facts: false
+  hosts: localhost
+  vars_files:
+    - Server_Inventory_hosts.yml
+  tasks:
+  - name: Create a ticket in SNOW updated
+    register: new_change_request
+    snow_record:
+      data:
+        assignment_group: CAB Approval
+        assigned_to: Luke Wilson
+        requested_by: Abel Tuter
+        category: Software
+        short_description: '2019-NON-PROD Linux Patching DEV1'
+        description: '2019-NON-PROD Linux Patching DEV1'
+        start_date: "{{item.Release_date}}"
+        end_date: "{{item.Release_enddate}}"
+        implementation_plan: PFA
+        backout_plan: PFA
+        test_plan: PFA
+        type: Normal
+      instance: dev34680
+      password: 009@Shreya
+      state: present
+      table: change_request
+      username: admin
+    with_items:
+        - "{{ serverinventory }}"
+#    register: new_change_request
+#- debug: var=new_change_request.record.number
