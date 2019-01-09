@@ -15,6 +15,7 @@
         short_description: '2019-NON-PROD Linux Patching DEV1'
         description: '2019-NON-PROD Linux Patching DEV1'
         start_date: "{{item.Release_date}}"
+        cmdb_ci: "{{item.Configuration_Item}}"
         implementation_plan: PFA
         backout_plan: PFA
         test_plan: PFA
