@@ -12,7 +12,7 @@
         assigned_to: Luke Wilson
         requested_by: Abel Tuter
         category: Software
-        short_description: '2019-NON-PROD Linux Patching's DEV1'
+        short_description: '2019| NON-PROD Linux Patching DEV1'
         description: '2019-NON-PROD Linux Patching DEV1'
         start_date: "{{item.Release_date}}"
         cmdb_ci: "{{item.Configuration_Item}}"
