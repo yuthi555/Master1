@@ -12,8 +12,14 @@
         assigned_to: Luke Wilson
         requested_by: Abel Tuter
         category: Software
-        short_description: '2020| PROD Q1 Linux Patching PROD1'
-        description: '2020| PROD Q1 Linux Patching PROD1'
+        short_description: '2021| PROD Q2 Linux Patching PROD2'
+        description: '2021| PROD Q2 Linux Patching PROD2'
+        u_change_coordinator: 'JP Jankovich'
+        u_director_approval: '.Caitlin Reiniger'
+        u_product_approval: '.Abraham Lincoln'
+        u_sr_director_approval: '.Adela Cervantsz'
+        u_technical_approver: 'Apple iPad 3.Bart Hachey'
+        u_vp_approval: 'Barbara Hindley'
         start_date: "{{item.Release_date}}"
         end_date: "{{item.Release_enddate}}"
         cmdb_ci: "{{item.Configuration_Item}}"
