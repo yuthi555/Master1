@@ -5,6 +5,7 @@ serverinventory:
 {%     set list = item.split(",") %}
   - Configuration_Item: '{{ list[0]|trim() }}'
     Release_date: '{{ list[1]|trim() }}'
+    Release_enddate: '{{ list[2]|trim() }}'
   
 {%   endif %}
 {% endfor %}
