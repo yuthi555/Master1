@@ -12,9 +12,10 @@
         assigned_to: Luke Wilson
         requested_by: Abel Tuter
         category: Software
-        short_description: '2019| NON-PROD Linux Patching DEV1'
-        description: '2019-NON-PROD Linux Patching DEV1'
+        short_description: '2020| PROD Q1 Linux Patching PROD1'
+        description: '2020| PROD Q1 Linux Patching PROD1'
         start_date: "{{item.Release_date}}"
+        end_date: "{{item.Release_enddate}}"
         cmdb_ci: "{{item.Configuration_Item}}"
         implementation_plan: PFA
         backout_plan: PFA
