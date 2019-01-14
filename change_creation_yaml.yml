@@ -13,8 +13,12 @@
         start_date: "{{item.Release_date}}"
         short_description: "{{item.Short_Description}}"
         category: "{{item.Category}}"
-        assignment_group: CAB Approval
-        assigned_to: Luke Wilson
+        assignment_group: "{{item.Assigned_Group}}"
+        assigned_to: "{{item.Assigned_To}}"
+        u_change_coordinator: "{{item.Change_Coordinator}}"
+        u_technical_approver: "{{item.Technical_Approver}}"
+        type: "{{item.Patching_Type}}"
+        implementation_plan: "{{item.Implemention_Plan}}"
         requested_by: Abel Tuter
         
         
@@ -31,7 +35,7 @@
         implementation_plan: PFA
         backout_plan: PFA
         test_plan: PFA
-        type: Normal
+        
       instance: dev34680
       password: 009@Shreya
       state: present
