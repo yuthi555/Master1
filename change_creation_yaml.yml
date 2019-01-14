@@ -8,7 +8,7 @@
     register: new_change_request
     snow_record:
       data:
-        environment: "{{item.Environment}}"
+        u_environment: "{{item.Environment}}"
         cmdb_ci: "{{item.CI}}"
         start_date: "{{item.Release_date}}"
         short_description: "{{item.Short_Description}}"
