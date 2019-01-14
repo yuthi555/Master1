@@ -8,11 +8,16 @@
     register: new_change_request
     snow_record:
       data:
+        environment: "{{item.Environment}}"
+        cmdb_ci: "{{item.CI}}"
+        start_date: "{{item.Release_date}}"
+        short_description: "{{item.Short_Description}}"
+        category: "{{item.Category}}"
         assignment_group: CAB Approval
         assigned_to: Luke Wilson
         requested_by: Abel Tuter
-        category: Software
-        short_description: '2021| NON PROD Q3 Linux Patching QA'
+        
+        
         description: '2021| NON PROD Q3 Linux Patching QA'
         u_change_coordinator: 'JP Jankovich'
         u_director_approval: '.Caitlin Reiniger'
@@ -20,9 +25,9 @@
         u_sr_director_approval: '.Adela Cervantsz'
         u_technical_approver: '.Bart Hachey'
         u_vp_approval: '.Barbara Hindley'
-        start_date: "{{item.Release_date}}"
+        
         end_date: "{{item.Release_enddate}}"
-        cmdb_ci: "{{item.Configuration_Item}}"
+        
         implementation_plan: PFA
         backout_plan: PFA
         test_plan: PFA
