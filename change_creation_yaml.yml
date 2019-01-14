@@ -19,23 +19,14 @@
         u_technical_approver: "{{item.Technical_Approver}}"
         type: "{{item.Patching_Type}}"
         implementation_plan: "{{item.Implemention_Plan}}"
+        backout_plan: "{{item.BackoutPlan}}"
+        test_plan: "{{item.ValidationPlan}}"
         requested_by: Abel Tuter
-        
-        
         description: '2021| NON PROD Q3 Linux Patching QA'
-        u_change_coordinator: 'JP Jankovich'
         u_director_approval: '.Caitlin Reiniger'
         u_product_approval: '.Abraham Lincoln'
         u_sr_director_approval: '.Adela Cervantsz'
-        u_technical_approver: '.Bart Hachey'
         u_vp_approval: '.Barbara Hindley'
-        
-        end_date: "{{item.Release_enddate}}"
-        
-        implementation_plan: PFA
-        backout_plan: PFA
-        test_plan: PFA
-        
       instance: dev34680
       password: 009@Shreya
       state: present
