@@ -10,7 +10,7 @@
       snow_record:
         username: "{{ snow_user_name }}"
         password: "{{ snow_user_password }}"
-        instance: dev34680
+        instance: dev54182
         state: present
         table: change_request
         data:
